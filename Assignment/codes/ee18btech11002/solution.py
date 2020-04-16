@@ -26,5 +26,4 @@ w1 = ((w-0.001)*(-s(w-0.001)) + w*s(w))/(-s(w-0.001) + s(w))
 
 print(w1)
 phase = -(np.pi/2) - 2*np.arctan(w1)
-phase = phase/np.pi
-print(phase, "pi")
+print(phase)

@@ -1,4 +1,6 @@
-import numpy as np
+# Code by Abhishek Shetkar
+# 02/04/2020
+# Released under GNU GPLimport numpy as np
 import matplotlib.pyplot as plt
 
 x = np.linspace(0,6,1000)

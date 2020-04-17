@@ -11,23 +11,29 @@ For Unity feedback system, given the open loop transfer function
 \begin{align}
 G(s) = \frac{1}{s(1+s)^2}
 \end{align}
-Therefore 
+Now, Polar plot is defined as:
+The plot of points(represented as $r.e^{j\phi}$) obtained by varying w from 0 to $\infty$  where $r=|H(jw)||G(jw)|$ and $\phi=\angle H(jw)G(jw)$.
+\linebreak
+Inverse Polar plot is similar, in this $r = \frac{1}{|H(jw)||G(jw)|}$ and $\phi = -\angle H(jw)G(jw)$   
+The system we're analysing is unity feedback which means $H(jw) = 1$
+Therefore ;
 \begin{align}
-|G(jw)| = \frac{1}{|jw||(1+jw)^2|}  
+|H(jw)||G(jw)| = |1|.\frac{1}{|jw||(1+jw)^2|}  
 \end{align}
 \begin{align}
-|G(jw)| = \frac{1}{w(1+w^2)}
+|H(jw)||G(jw)| = \frac{1}{w(1+w^2)}
 \label{eq:mod_G}
 \end{align}
 and to calculate Phase of G(jw)
 \begin{align}
-G(jw) = 1.e^{0}.\frac{1}{w.e^{\pi/2}} . \cbrak{\frac{1}{\sqrt{1^2 + w^2} . e^{tan^{-1}(w)}}}^2  
+H(jw)G(jw) = 1.e^{0}.1.e^{0}.\frac{1}{w.e^{\pi/2}} . \cbrak{\frac{1}{\sqrt{1^2 + w^2} . e^{tan^{-1}(w)}}}^2  
 \end{align}
 \begin{align}
-G(jw) = 1.e^{0} w^{-1}.e^{-\pi/2}. (1^2 + w^2)^{-1} . e^{-2tan^{-1}(w)}  
+H(jw)G(jw) = 1.e^{0}.1.e^{0} w^{-1}.e^{-\pi/2}. (1^2 + w^2)^{-1} . e^{-2tan^{-1}(w)}  
 \end{align}
+Therefore
 \begin{align}
-\angle G(jw) = \frac{-\pi}{2} - 2tan^{-1}(w)  
+\angle H(jw)G(jw) = \frac{-\pi}{2} - 2tan^{-1}(w)  
 \label{eq:phase_G}
 \end{align}
 

@@ -3,32 +3,36 @@
 # Released under GNU GPL
 import numpy as np
 import matplotlib.pyplot as plt
+import control
 
-w = np.append(np.linspace(0.001,1,100),np.linspace(1,10,1000)) #ranging omega
+w = np.linspace(-20,20,2001) #ranging omega
 
-#|G(jw)|
-modGjw = 1/(w*(1+w*w))                                        
+#G(s)
+s = control.TransferFunction.s
+G = 1/((s)*(1+s)*(1+s))                                       
 
-# Phase G(jw)
-phase = -(np.pi/2) - 2*np.arctan(w)                            
+Mag, Ph, W = G.freqresp(w)
 
-#x-coordinate in polar plot is |G(jw)|*cos(Phase)
-x = modGjw*np.cos(phase)
-#y-coordinate in polar plot is |G(jw)|*sin(Phase)                                       
-y = modGjw*np.sin(phase)									   
+#Plotiing polar plot
 
-plt.grid()
-plt.plot(x,y)
-plt.xlim([-0.6,0.1])
-plt.ylim([-0.01,0.1])
+ax = plt.subplot(111, projection='polar')
+
+ax.plot(Ph.reshape((2001,))[-995:-800],Mag.reshape((2001,))[-995:-800])
 
 plt.show()
-#for inverse plot, we plot 1/(G(w)) with varying w, therefore inversephase is -(phase)
-invphase = (np.pi/2) + 2*np.arctan(w)              
-            
-x2 = np.cos(invphase)/modGjw
-y2 = np.sin(invphase)/modGjw
 
-plt.grid()
-plt.plot(x2,y2)
+
+#inverse polar plot G(s) ie. polar plot of 1/G(s)
+
+s = control.TransferFunction.s
+iG = (s)*(1+s)*(1+s)                                       
+
+iMag, iPh, iW = iG.freqresp(w)
+
+#Plotiing inverse polar plot
+
+ax = plt.subplot(111, projection='polar')
+
+ax.plot(iPh.reshape((2001,))[-995:-800],iMag.reshape((2001,))[-995:-800])
+
 plt.show()

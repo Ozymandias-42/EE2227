@@ -29,21 +29,20 @@ r=\frac{1}{|H(\j\omega)||G(\j\omega)|}
 \end{align}   
 The system we're analysing is unity feedback which means $H(\j\omega) = 1$
 Therefore ;
-\begin{align}
-|H(\j\omega)||G(\j\omega)| = |1|.\frac{1}{|\j\omega||(1+\j\omega)^2|}  
-\end{align}
+%\begin{align}
+%|H(\j\omega)||G(\j\omega)| = |1|.\frac{1}{|\j\omega||(1+\j\omega)^2|}  
+%\end{align}
 \begin{align}
 |H(\j\omega)||G(\j\omega)| = \frac{1}{\omega(1+\omega^2)}
 \label{eq:mod_G}
 \end{align}
-and to calculate Phase of G(jw)
-\begin{align}
-H(\j\omega)G(\j\omega) = 1.e^{0}.1.e^{0}.\frac{1}{\omega.e^{\pi/2}} . \cbrak{\frac{1}{\sqrt{1^2 + \omega^2} . e^{tan^{-1}(\omega)}}}^2  
-\end{align}
-\begin{align}
-H(\j\omega)G(\j\omega) = 1.e^{0}.1.e^{0} \omega^{-1}.e^{-\pi/2}. (1^2 + \omega^2)^{-1} . e^{-2tan^{-1}(\omega)}  
-\end{align}
-Therefore
+and Phase;
+%\begin{align}
+%H(\j\omega)G(\j\omega) = 1.e^{0}.1.e^{0}.\frac{1}{\omega.e^{\pi/2}} . \cbrak{\frac{1}{\sqrt{1^2 + \omega^2} . e^{tan^{-1}(\omega)}}}^2  
+%\end{align}
+%\begin{align}
+%H(\j\omega)G(\j\omega) = 1.e^{0}.1.e^{0} \omega^{-1}.e^{-\pi/2}. (1^2 + \omega^2)^{-1} . e^{-2tan^{-1}(\omega)}  
+%\end{align}
 \begin{align}
 \angle H(\j\omega)G(\j\omega) = \frac{-\pi}{2} - 2tan^{-1}(\omega)  
 \label{eq:phase_G}
@@ -59,6 +58,12 @@ codes/ee18btech11002/polarplot.py
 \includegraphics[width=\columnwidth]{./figs/ee18btech11002(a).eps}
 \caption{}
 \label{fig:polar_plot}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11002(b).eps}
+\caption{}
+\label{fig:inverse_polar_plot}
 \end{figure}
 \item Find the frequency at which $|G(\j\omega)| = 1$ and corresponding phase angle $\angle G(\j\omega)$
 \\
@@ -87,10 +92,4 @@ and we get
 \begin{align}
 \angle G(\j\omega)=-\frac{52}{59}\pi
 \end{align}
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{./figs/ee18btech11002(b).eps}
-\caption{}
-\label{fig:inverse_polar_plot}
-\end{figure}
 \end{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.12)  18 APR 2020 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.2.12)  22 APR 2020 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1366,31 +1366,37 @@ File: ./figs/ee18btech11002(a).eps Graphic file (type eps)
 File: ./figs/ee18btech11002(b).eps Graphic file (type eps)
  <./figs/ee18btech11002(b).eps>
 
-LaTeX Warning: Command \j invalid in math mode on input line 68.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 68.
-
-
 LaTeX Warning: Command \j invalid in math mode on input line 71.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 81.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 81.
+LaTeX Warning: Command \j invalid in math mode on input line 74.
 
 [1
 
 ]
 
-LaTeX Warning: Command \j invalid in math mode on input line 82.
+LaTeX Warning: Command \j invalid in math mode on input line 84.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 94.
+LaTeX Warning: Command \j invalid in math mode on input line 84.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 94.
+LaTeX Warning: Command \j invalid in math mode on input line 87.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 97.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 97.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 98.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 110.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 110.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
@@ -1416,12 +1422,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
- 31044 strings out of 494881
- 661811 string characters out of 6179627
+ 31048 strings out of 494881
+ 661867 string characters out of 6179627
  870874 words of memory out of 5000000
- 33797 multiletter control sequences out of 15000+600000
+ 33801 multiletter control sequences out of 15000+600000
  54754 words of font info for 123 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
- 55i,8n,67p,510b,1031s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,67p,510b,1030s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (2 pages, 16556 bytes).
+Output written on gvv_control_manual.dvi (2 pages, 18460 bytes).

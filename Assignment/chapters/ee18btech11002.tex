@@ -65,6 +65,22 @@ codes/ee18btech11002/polarplot.py
 \caption{Inverse Polar Plot}
 \label{fig:inverse_polar_plot}
 \end{figure}
+\item Explain the utility of Polar plot.
+\\
+\solution
+We saw earlier that the Polar Plot is the Plot of $G(\j\omega)$ on a complex plane by varying $\omega$.
+The Polar plot does not give any information about the number of poles lying in positive half of s-plane.
+However, the two things which can be seen easily on the Polar Plot are Gain Margin and Phase margin.
+The Gain Margin is the value of $\frac{1}{|G(\j\omega)|}$ at the point where the plot crosses the x-axis.
+The Phase margin is the phase of the point which intersects the unit circle, measured anticlockwise from the negative x-axis.
+From the values of Gain and Phase Margin we can conclude:
+\begin{itemize}
+\item Greater values of Gain and Phase margin indicate greater stability.
+\item If Gain margin is greater than 1 \textbf{and} Phase margin is greater than 0, system is stable.
+\item If Gain margin = 1 \textbf{and} Phase margin = 0, system is marginally stable. 
+\item if Gain margin is lesser than 1 \textbf{or} Phase Margin is lesser than 0, system is unstable
+\end{itemize}
+From our Plot, we can conclude that Gain Margin is greater than 1 \textbf{and} Phase margin is greater than 0, therefore our system is stable. 
 \item Find the frequency at which $|G(\j\omega)| = 1$ and corresponding phase angle $\angle G(\j\omega)$
 \\
 \solution 
